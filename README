@@ -1,1 +1,35 @@
 Monitoring raid status using sas3ircu
+
+IR Volume State values are as follows*:
+- Okay (OKY) – The volume is active and drives are functioning properly. User data is protected if the current
+RAID level provides data protection.
+- Degraded (DGD) – The volume is active. User data is not fully protected because the configuration has changed
+or a drive has failed.
+- Failed (FLD) – The volume has failed.
+- Missing (MIS) – The volume is missing.
+- Initializing (INIT) – The volume is initializing.
+- Online (ONL) – The volume is online.
+Physical device State values are as follows:
+- Online (ONL) – The drive is operational and is part of a volume.
+- Hot Spare (HSP) – The drive is a hot spare that is available to replace a failed drive in a volume.
+- Ready (RDY) – The drive is ready for use as a normal disk drive, or it is ready to be assigned to a volume or a hot
+spare pool.
+- Available (AVL) – The drive might not be ready, and it is not suitable for use in a volume or a hot spare pool.
+- Failed (FLD) – The drive failed and is now offline.
+- Missing (MIS) – The drive has been removed or is not responding.
+- Standby (SBY) – The device is not a hard-disk device.
+- Out of Sync (OSY) – The drive, which is part of an IR volume, is not in sync with other drives that are part of
+the volume.
+- Degraded (DGD) – The drive is part of a volume and is in degraded state.
+- Rebuilding (RBLD) – The drive is part of a volume and is currently rebuilding.
+- Optimal (OPT) – The drive is optimal and is part of a volume.
+Physical device Drive Type values are as follows:
+- SAS_HDD – The drive is a SAS HDD.
+- SATA_HDD – The drive is a SATA HDD.
+- SAS_SSD – The drive is a SAS SSD.
+- SATA_SSD – The drive is a SATA SSD.
+Physical device Protocol values are as follows:
+- SAS – The drive supports SAS protocol.
+- SATA – The drive supports SATA protocol.
+
+*Sourse info: https://docs.broadcom.com/doc/12353382
